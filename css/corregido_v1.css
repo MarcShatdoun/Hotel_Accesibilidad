@@ -26,7 +26,159 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'karla', sans-serif;
+    font-size: 1.2rem;
+}
+:root{
+    --primary-color : darkgreen;
+    --secondary-color: white; 
+    --text-color : black;
+    --hover-color: olive;
+    --background-from-color: #525252;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+}
+h1, h2{
+    font-family: 'Marcellus', cursive;
+    text-align: center;
 }
 h1{
-    font-family: 'Marcellus', cursive;
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav, footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+nav ul li{
+    padding: 1rem;
+    &:hover{
+        background-color: var(--hover-color);
+    }
+}
+nav ul li a{
+    color: inherit; /*Gracias a esto puede heredar colores de la nav*/
+}
+
+header{
+    text-align: center;
+  
+}
+header img{
+    width: 100%;
+}
+
+main section:first-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin: 2em auto;
+    
+}
+main img{
+    width: 100%;
+}
+
+main section:nth-child(2){	
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin: 2em auto;
+}
+#habitaciones{
+    padding-bottom: 0.5rem;
+}
+
+#restaurante p{
+    margin-bottom: 0.5rem;
+}
+
+.section-form{
+    background-color: var(--background-from-color);
+    color: var(--secondary-color);
+    padding: 2rem;
+   
+
+    h2{
+        padding: 2rem 0;
+    }
+
+}
+
+.section-form form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    label{
+        display: block;
+        margin-bottom: .5rem;
+    }
+    a{
+        color: var(--secondary-color);
+    }
+}
+fieldset{
+    padding: 1rem;
+}
+input{
+    width: 100% ;
+    padding: .5rem;
+    text-align: right;
+}
+
+button{
+    padding: .75rem 1.25rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    &:hover{
+        background-color: var(--hover-color);
+    }
+}
+
+footer div{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--secondary-color);
+    h2{
+        font-size: 1.25rem;
+    }
+}
+
+#nosotros ul{
+    list-style: none;
+
+    a{
+        color:inherit;
+        margin-bottom: .5rem;
+    }
+    
+}
+
+footer img{
+    width: 50%;
+}
+
+.volver-inicio{
+    text-align: right;
+    a{
+        display: block;
+    }
 }
