@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Marcellus';
+    src: url('../fonts/transfonter.org-20240320-105011/Marcellus-Regular.woff2') format('woff2'),
+        url('../fonts/transfonter.org-20240320-105011/Marcellus-Regular.woff') format('woff')
+        url('../fonts/marcellus/Marcellus-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/transfonter.org-20240320-105011/Karla-Regular.woff2') format('woff2'),
+        url('../fonts/transfonter.org-20240320-105011/Karla-Regular.woff') format('woff'),
+        url('../fonts//Karla/static/Karla-Regular.ttf') format('truetype'),;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* g */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'karla', sans-serif;
+}
+h1{
+    font-family: 'Marcellus', cursive;
+}

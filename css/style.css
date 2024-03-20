@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Waiting+for+the+Sunrise&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", arial, helvetica;
+  
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+body {
+  background-color: #f2f2f2;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-around;
+  background-color: #683413;
+  color: gray;
+  padding: 5px;
+}
+
+.barra a {
+  text-decoration: none;
+  color: #ffff;
+  padding: 5px;
+  font-size: 28px;
+
+}
+
+.barra a:hover {
+  background-color: #A1662F;
+}
+.container {
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+
+/* .title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 1rem 0;
+
+} */
+h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.foto-ppal img {
+  width: 100%;
+}
+
+.detalles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+
+  h2 strong {
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(188, 120, 31);
+    margin-bottom: 2rem;
+  }
+
+  p,
+  div,
+  label {
+    padding: 1rem;
+    font-size: 1.5rem;
+    
+  }
+}
+
+.contacto {
+  background-color: rgb(157, 105, 105);
+
+  p strong {
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin: 1.5rem 0;
+    text-align: center; 
+    display: block;
+  }
+
+  input { 
+    font-size: 1.5rem;
+  }
+}
+
+.boton {
+  margin-top: 1rem;
+  padding: 5px 20px;
+  text-align: left;
+  border: 1px solid darksalmon;
+  background-color: darksalmon;
+  display: inline-block;
+  border-radius: 5%;
+
+  &:hover {
+    background-color: salmon;
+    color: bisque;
+  }
+}
+
+.final {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+background-color: #683413;
+  padding: 2rem 5%;
+  color: #fff;
+}
+
+#nosotros {
+  font-size: 1.2rem;
+
+  a {
+    font-size: inherit;
+    text-decoration: none;
+    color:#fff;
+  }
+}
+
+#app {
+  font-size: 1.2rem;
+  text-align: center;
+  img {
+    width: 40%;
+  }
+}
+
+#siguenos {
+  font-size: 1.2rem;
+  text-align: center;
+
+
+  div {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  img {
+    width: 30%;
+  }
+}
+
+#habitaciones{
+display: flex;
+flex-direction: column;
+align-items: center ;
+}
